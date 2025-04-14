@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Echoes of the Veil</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="animated-bg" id="animated-bg"></div>
+    <h1 class="fade-text">Echoes of the Veil</h1>
+    <p class="fade-subtext">Memories slip through time... what will remain?</p>
+  </section>
+
+  <!-- Timeline Navigation -->
+<div class="timeline-vertical">
+  <img src="images/timeline-line.png" alt="Timeline line" class="timeline-bg" />
+  <span class="timeline-dot" data-scroll="1">1</span>
+  <span class="timeline-dot" data-scroll="2">2</span>
+  <span class="timeline-dot" data-scroll="3">3</span>
+</div>
+
+  <!-- Fading Notes Intro Parallax Sheet -->
+  <section class="fading-notes-intro">
+    <img id="fading-sheet" src="images/fading-notes.png" alt="Floating Music Sheet" />
+  </section>
+
+  <!-- Fading Notes Section -->
+  <section class="fading-notes" id="fading-notes">
+    <div class="paper-wrapper">
+      <h2>The Fading Notes</h2>
+      <p class="story-quote">“Fragments of melody echo through the dark...”</p>
+    </div>
+
+    <div class="memory-part scroll-fade">
+      <div class="floating-notes">
+        <img src="images/torn1.png" alt="Torn Piece 1" data-speed="-0.3" class="move"
+             style="top: 60px; left: 145px; width: 500px;">
+
+        <img src="images/torn2.png" alt="Torn Piece 2" data-speed="1.5" class="move"
+             style="top: -100px; left: 100px; width: 600px;">
+
+        <img src="images/torn3.png" alt="Torn Piece 3" data-speed="2" class="move"
+             style="top: 100px; left: 240px; width: 250px;">
+      </div>
+
+      <p>Scattered notes drift through the air—some glowing, some fading. Each one hums a different phrase, a piece of Elara’s past.</p>
+    </div>
+
+
+
+    <div class="memory-part scroll-fade">
+      <div class="floating-dissolve-scene">
+        <img src="images/torn-letter.png" alt="Torn Music Letter" data-speed="-1" class="move" style="top: -150px; left: 115px; width: 600px;">
+        <img src="images/music-note.png" alt="Music Note" data-speed="1.2" class="move" style="top: -290px; left: 75px; width: 600px;">
+        <img src="images/hand-dissolves.png" alt="Aurelius Hand" data-speed="2" class="move" style="top: 100px; left: 80px; width: 240px;">
+      </div>
+
+      <p>Aurelius reaches toward one note. It dissolves in his hand, revealing a whispered line: “Do you remember how it ended?”</p>
+    </div>
+
+
+    <div class="memory-part scroll-fade">
+      <div class="vanishing-notes">
+        <!-- Ảnh nền con đường đứng yên -->
+        <img src="images/dark-path.png" alt="Dark path" class="static-bg" style="top: 0; left: 0; width: 100%;">
+
+        <!-- Các nốt nhạc có hiệu ứng move -->
+        <img src="images/music-note1.png" alt="Note 1" data-speed="1.2" class="move"
+             style="top: 180px; left: 10px; width: 550px;">
+
+        <img src="images/music-note2.png" alt="Note 2" data-speed="-1.5" class="move"
+             style="top: 190px; left: 170px; width: 520px;">
+
+        <img src="images/music-note3.png" alt="Note 3" data-speed="2" class="move"
+             style="top: 195px; left: 140px; width: 480px;">
+      </div>
+
+      <p>As the final notes vanish, silence deepens—only the path ahead remains, veiled and unknown.</p>
+    </div>
+
+  </section>
+
+  <!-- Reflection Pool Section -->
+  <section class="memory-wrapper" id="reflection-pool">
+    <div class="memory-intro">
+      <img src="images/reflection-pool.png" alt="Reflection Pool" />
+      <h2>The Reflection Pool</h2>
+      <p class="story-quote">“Is it you… or just your memory?”</p>
+    </div>
+
+    <div class="memory-part scroll-fade">
+      <img src="images/aurelius-face.png" alt="Aurelius reflection">
+      <p>He peers into the still water—his own face stares back, but something flickers. Her eyes? Her sorrow?</p>
+    </div>
+
+    <!-- Floating Whisper Lyrics over Water -->
+    <div class="memory-part scroll-fade">
+      <div class="shimmer-scene">
+        <div class="ripple-wrapper">
+          <img src="images/pool-distortion.png" alt="Ripple lake with glow" class="ripple-bg" />
+
+          <!-- Lyric line: lời hát nằm chính giữa ripple -->
+          <div class="lyric-line">
+            <span style="--i:0">Was</span>
+            <span style="--i:1">I</span>
+            <span style="--i:2">ever</span>
+            <span style="--i:3">real...</span>
+            <span style="--i:4">or</span>
+            <span style="--i:5">just</span>
+            <span style="--i:6">a</span>
+            <span style="--i:7">melody</span>
+            <span style="--i:8">you</span>
+            <span style="--i:9">held</span>
+            <span style="--i:10">onto?</span>
+          </div>
+
+          <!-- Floating music notes inside ripple only -->
+          <img src="images/music-note1.png" class="note-float" style="--delay:0s; --x: 10px; --y: -20px;">
+          <img src="images/music-note2.png" class="note-float" style="--delay:1.5s; --x: -30px; --y: 25px;">
+          <img src="images/music-note3.png" class="note-float" style="--delay:2.8s; --x: 40px; --y: -15px;">
+        </div>
+      </div>
+
+      <p>The pool shimmers. Elara’s voice echoes faintly: “Was I ever real, or just a melody you held onto?”</p>
+    </div>
+
+
+    <div class="memory-part scroll-fade">
+      <img src="images/memory-glow.png" alt="Memory ripple">
+      <p>The reflection splits, revealing fragments of her memory—smiles, tears, music. He can’t tell if she’s calling him back, or saying goodbye.</p>
+    </div>
+  </section>
+
+  <!-- MEMORY 1: Her Silhouette -->
+  <section class="memory-wrapper" id="memory-1">
+    <div class="memory-intro">
+      <img src="images/memory1.jpeg" alt="Memory 1" />
+      <h2>Memory 1: Her Silhouette</h2>
+      <p class="story-quote">“A fading whisper…”</p>
+    </div>
+    
+
+    <div class="memory-part scroll-fade">
+      <img src="images/elara-hallway.jpg" alt="Elara walking down the hall" />
+      <p>He would always see her through the corridor glass, her silhouette dancing as she hummed. A quiet ritual before rehearsal.</p>
+    </div>
+
+    <section id="veil-scene" class="veil-scene">
+      <div class="veil-parallax">
+        <img src="images/5.png" class="veil-layer" data-depth="0.05" />
+        <img src="images/4.png" class="veil-layer" data-depth="0.1" />
+        <img src="images/3.png" class="veil-layer" data-depth="0.15" />
+        <img src="images/2.png" class="veil-layer" data-depth="0.25" />
+        <img src="images/1.png" class="veil-layer" data-depth="0.4" />
+      </div>
+
+      <div class="veil-text-block" id="veil-text-block">
+        <p>Her notes lingered even after she left the room.</p>
+        <p>They seemed etched into the walls of the theatre itself—</p>
+        <p>like ghosts of a forgotten aria.</p>
+      </div>
+    </section>
+
+
+
+    <div class="memory-part scroll-fade">
+      <img src="images/veil-transition.png" alt="Veil shimmer" />
+      <p>One night, the lights dimmed. The air shimmered. He followed the sound of her voice, but what he found wasn’t Elara—only her echo in the Veil.</p>
+    </div>
+  </section>
+
+  <!-- MEMORY 2: The Voice -->
+  <section class="memory-wrapper" id="memory-2">
+    <div class="memory-intro">
+      <img src="images/memory2.png" alt="Memory 2" />
+      <h2>Memory 2: The Voice</h2>
+      <p class="story-quote dynamic-text" id="memory2-text"></p>
+    </div>
+
+    <div class="memory-part scroll-fade veil-forest-bubble">
+      <div class="image-wrapper">
+        <img src="images/veil-forest.JPG" class="veil-image" />
+        <img src="images/talk-clouds.png" class="speech-bubble" id="speech-bubble" />
+      </div>
+      <p>“Who are you?” she asked—not in fear, but in curiosity. Aurelius' heart broke quietly. She no longer remembered his name.</p>
+    </div>
+
+
+    <div class="memory-part scroll-fade">
+      <div class="double-illustration">
+        <img src="images/voice-shards1.jpg" alt="Elara dissolving - part 1" />
+        <img src="images/voice-shards2.jpg" alt="Elara dissolving - part 2" />
+      </div>
+      <p>Each time he called her name, her eyes flickered—recognition dancing just out of reach. Memory was not linear in the Veil.</p>
+    </div>
+
+    <div class="memory-part scroll-fade lyric-fade-scene">
+      <div class="lyric-line-breakup">
+        <span style="--i:0">The</span>
+        <span style="--i:1">Veil</span>
+        <span style="--i:2">rearranged</span>
+        <span style="--i:3">voices…</span>
+        <span style="--i:4">It</span>
+        <span style="--i:5">weaved</span>
+        <span style="--i:6">them</span>
+        <span style="--i:7">into</span>
+        <span style="--i:8">mist.</span>
+      </div>
+
+      <div class="lyric-line-breakup unfinished">
+        <span style="--i:0">His</span>
+        <span style="--i:1">became</span>
+        <span style="--i:2">a</span>
+        <span style="--i:3">forgotten</span>
+        <span style="--i:4">chorus,</span>
+        <span style="--i:5">hers—just</span>
+        <span style="--i:6">an</span>
+        <span class="fade-last" style="--i:7">unfinishe<span class="flicker-letter">d</span></span>
+        <span class="fade-out">s</span>
+        <span class="fade-out">o</span>
+        <span class="fade-out">n</span>
+        <span class="fade-out">g</span>
+        <span class="fade-out">.</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MEMORY 3: The Note -->
+  <section class="memory-wrapper" id="memory-3">
+    <div class="memory-intro">
+      <img src="images/memory3.1.png" alt="Memory 3" />
+      <h2>Memory 3: The Note</h2>
+      <p class="story-quote">“A promise to return…”</p>
+    </div>
+
+    <div class="memory-part scroll-fade">
+      <img src="images/letter-on-stage.jpg" alt="Note on the empty theatre stage" />
+      <p>In a place where time no longer moved, she left him a note: “You have to let go.” The handwriting was shaky, but it was hers.</p>
+    </div>
+
+    <div class="memory-part scroll-fade">
+      <img src="images/aurelius-alone.png" alt="Aurelius in empty theatre" />
+      <p>He read the note under the ghostlight, a single tear tracing his jawline. The theatre was silent, except for her melody looping faintly in the background.</p>
+    </div>
+
+    <section class="memory-wrapper" id="memory-3-final">
+      <div class="scroll-scene">
+        <!-- Background full-screen -->
+        <img src="images/veil-break.png" alt="Aurelius facing glowing gate" class="veil-full-bg" />
+
+        <!-- Text -->
+        <p class="veil-choice-text">He had to choose: walk back into the real world—or stay, dissolve into memory with her. One step forward would decide everything.</p>
+
+        <!-- QR -->
+        <div class="qr-code-wrapper">
+          <img src="images/qr-code.jpeg" alt="Scan to view in AR" class="qr-code" />
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </section>
+
+
+
+<section id="elara-letter-section">
+  <div class="final-letter-section" id="final-letter">
+  <h1>Echoes of the Veil – Final Message</h1>
+  <div class="question-block">
+    <p class="question-text">Do you wish to send her a final message?</p>
+    <div class="question-buttons">
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+  </div>
+
+  <div class="container hidden" id="envelopeContainer">
+    <div class="envelope-wrapper" id="envelopeWrapper">
+      <div class="envelope">
+        <div class="letter">
+          <textarea id="elaraMessage" placeholder="Write your message here..."></textarea>
+        </div>
+      </div>
+      <div class="heart" id="heartBtn"></div>
+    </div>
+    <div class="send-below">
+      <button id="sendToElara">Send</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<p id="sentConfirmation" class="hidden">Your message has been sent into The Veil...</p>
+
+
+  <!-- Ending Section -->
+<section class="ending-choice" id="ending-choice">
+  <div class="nexus-scene">
+    <img src="images/nexus-gate.png" alt="Glowing gate" class="nexus-bg" />
+    <img src="images/nexus.PNG" alt="Nexus figure" class="nexus-figure hidden" />
+    <div class="nexus-bubble hidden">
+      <p>"Will you call her back, let her go, or remain in the Veil with her?"</p>
+    </div>
+  </div>
+
+  <div class="choice-buttons hidden">
+    <button class="choice-btn" data-ending="return">Call Her Back</button>
+    <button class="choice-btn" data-ending="letgo">Let Her Go</button>
+    <button class="choice-btn" data-ending="stay">Stay with Her</button>
+  </div>
+
+  <div class="ending-result" id="ending-result"></div>
+  <div class="ending-scene" id="ending-return">
+    <img src="images/ending-return.png" alt="Elara returns" />
+    <p class="ending-caption">She came back, but something had changed.</p>
+  </div>
+  <div class="ending-scene" id="ending-letgo">
+    <img src="images/ending-letgo.png" alt="Elara fades away" />
+    <p class="ending-caption">The melody stopped—but peace followed.</p>
+  </div>
+  <div class="ending-scene" id="ending-stay">
+    <img src="images/ending-stay.png" alt="Stay together" />
+    <p class="ending-caption">They vanished into memory, together.</p>
+  </div>
+
+</section>
+
+
+
+  <!-- Audio -->
+  <audio id="hover-sound" src="audio/soft-hover.mp3" preload="auto"></audio>
+  <audio id="audio-return" src="audio/return-soft-piano.mp3"></audio>
+<audio id="audio-letgo" src="audio/letgo-soft-ambient.mp3"></audio>
+<audio id="audio-stay" src="audio/stay-warm-harmony.mp3"></audio>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
